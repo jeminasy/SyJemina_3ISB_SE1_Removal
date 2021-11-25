@@ -1,11 +1,24 @@
-function Rectangle(length, height){
-    this.length = length;
-    this.height = height;
-
-    this.computeArea = function() {
-        console.log(length * height);
+class Rectangle{
+    constructor(length, height){
+        this.length = length;
+        this.height = height;
+    }
+    setLength(length){
+        this.length = length;
+    }
+    getLength() {
+        return this.length;
+    }
+    setHeight(height){
+        this.height = height;
+    }
+    getHeight() {
+        return this.height;
+    }
+    computeArea(){
+        return this.height * this.length;
     }
 }
 
 let reactangle1 = new Rectangle(3, 3);
-reactangle1.computeArea();
+console.log("AREA: " + reactangle1.computeArea());
