@@ -1,6 +1,6 @@
 function Cat (breed, color, age, gender){
-    this.breed = this.breed;
-    this.color = this.color;
+    this.breed = breed;
+    this.color = color;
     this.age = age;
     this.gender = gender;
     this.speak = function () {
